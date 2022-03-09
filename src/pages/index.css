@@ -1,0 +1,36 @@
+#gatsby-focus-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/Books.jpg);
+    background-size: cover;
+    background-position: relative;
+}
+
+#hero-overlay {
+    position: absolute;
+    background: rgba(202,90,200,0.5);
+    background: linear-gradient(90deg, rgba(202,90,200,0.5) 13%, rgba(31,41,92,0.5) 96%);
+    height: 100vh;
+    width: 100vw;
+}
+
+#hero-text-container {
+    width: 70vw;
+}
+
+.my-social-icon {
+    background-color: white;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+}
+
+.my-social-icon:hover {
+    transform: scale(1.1)
+}
+
+a {
+    color: black;
+}
+
+body { font-family: "Montserrat"; }
