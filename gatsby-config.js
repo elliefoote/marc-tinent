@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-      title: ``,
-    siteUrl: `https://www.yourdomain.tld`
+      title: `Marc Tinent | Escritor de Cosas`,
+    siteUrl: `https://www.marctinent.com`
   },
   plugins: [{
     resolve: 'gatsby-plugin-google-analytics',
