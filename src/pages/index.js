@@ -2,7 +2,6 @@ import * as React from "react";
 import './index.css';
 import {BsInstagram} from 'react-icons/bs';
 import {AiTwotoneMail} from 'react-icons/ai';
-import "@fontsource/source-sans-pro/200.css";
 
 // styles
 

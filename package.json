@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/dm-sans": "^4.5.3",
     "@fontsource/montserrat": "^4.5.5",
     "@fontsource/nunito": "^4.5.4",
     "@fontsource/source-sans-pro": "^4.5.3",
@@ -22,6 +23,7 @@
     "gatsby": "^4.9.2",
     "gatsby-plugin-google-analytics": "^4.9.0",
     "react": "^17.0.1",
+    "react-bootstrap": "^2.2.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.3.1"
   }

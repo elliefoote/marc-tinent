@@ -1,0 +1,81 @@
+
+.book-card {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.bc-image {
+    width: 80%;
+}
+
+#bc-1 {
+    background-color: #8A53FF;
+}
+
+#bc-2 {
+    background-color: #FFD80C;
+}
+
+#bc-3 {
+    background-color: #FD4B38;
+}
+
+#bc-4 {
+    background-color: #3CCB09;
+}
+
+#bc-5 {
+    background-color: #8A53FF;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .book-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    .bc-image {
+        width: 60%;
+    }
+
+    .bc-text {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .bc-desc {
+        font-size: 1.2vw;
+    }
+
+    #bc-2 {
+        margin-top: 200px;
+    }
+
+    #bc-3 {
+        margin-top: -180px;
+    }
+
+    #bc-4 {
+        margin-top: -5px;
+    }
+
+    #bc-5 {
+        margin-top: -50px;
+    }
+   
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
