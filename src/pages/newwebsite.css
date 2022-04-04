@@ -67,7 +67,7 @@
 @media (min-width: 768px) { 
 
     .cover-head {
-        font-size: 6vw;
+        font-size: 7vw;
     }
 
     .cover-body {
@@ -75,7 +75,7 @@
     }
 
     .headshot {
-        width: 400px;
+        width: 450px;
     }
  }
 
