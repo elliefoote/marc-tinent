@@ -74,6 +74,11 @@
         font-size: 3vw;
     }
 
+    .headshot-container {
+        width: 80%;
+        height: 80%;
+    }
+
  }
 
 /* // Large devices (desktops, 992px and up) */
