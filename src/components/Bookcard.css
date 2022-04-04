@@ -6,6 +6,8 @@
 
 .bc-image {
     width: 80%;
+    height: 80%;
+    object-fit: contain;
 }
 
 #bc-1 {
@@ -41,6 +43,8 @@
 
     .bc-image {
         width: 60%;
+        height: 60%;
+        object-fit: contain;
     }
 
     .bc-text {
