@@ -12,3 +12,7 @@
 #logo-body {
     font-size: 20px;
 }
+
+.my-nav-link:hover {
+    font-weight: bolder;   
+}

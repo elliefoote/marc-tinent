@@ -8,7 +8,7 @@
 }
 
 #cover-box {
-    background-color: #FFE9CE;
+    background-color: #044389;
     border-radius: 15px;
     width: 100%;
     height: auto;
@@ -29,7 +29,7 @@
 }
 
 .contact-box {
-    background-color: #FFE9CE;
+    background-color:  #044389;
     border-radius: 15px;
     width: 100%;
     height: 70vh;
@@ -47,11 +47,17 @@
 }
 
 .my-social-icon:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 
-a {
-    color: black;
+#headshot {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.bc-purchase:hover {
+    text-decoration: none;
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -79,14 +85,13 @@ a {
     }
 
     .contact-box {
-        background-color: #FFE9CE;
         border-radius: 15px;
         width: 100%;
         height: 55vh;
     }
     
     .contact-text {
-        font-size: 6vw;
+        font-size: 4vw;
     }
  }
 

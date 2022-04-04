@@ -1,7 +1,6 @@
 import React from 'react';
 import './Bookcard.css';
 import MortViu from '../images/MortViu.png';
-import Ghost from '../images/Ghost.png';
 import Pierrot from '../images/Pierrot.png';
 import Senora from '../images/Senora.png';
 import Viejos from '../images/Viejos.png';
@@ -75,17 +74,7 @@ const Bookcard = () => {
         
             ],
             textColor: "dark"
-        },
-
-        {
-            id: "bc-5",
-            category: "Novela",
-            title: "[Título confidencial]", 
-            description: `También he hecho novelas como escritor fantasma para Planeta. Que como experiencia es rara, pero divertida.`,
-            img: Ghost,
-            links: [],
-            textColor: "light"
-        },
+        }
 
     ]
 
@@ -102,9 +91,11 @@ const Bookcard = () => {
                 <div className="bc-title"><h3>{book.title}</h3></div>
                 <div className="bc-desc">{book.description}</div>
                 
+                <div className="mt-3">
                 {book.links.map(link => (
-                    <a href={link.linkurl} className="bc-purchase btn btn-primary mt-3 me-3">{link.linktitle}</a>
+                    <a href={link.linkurl} className={book.textColor === "light" ? "bc-purchase me-3 text-light" : "bc-purchase me-3 text-dark"}>{link.linktitle}</a>
                 ))}
+                </div>
                 </div>
                 </div>
                 </div>

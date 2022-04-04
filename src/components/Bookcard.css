@@ -24,10 +24,6 @@
     background-color: #3CCB09;
 }
 
-#bc-5 {
-    background-color: #8A53FF;
-}
-
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {  }
 
@@ -57,21 +53,16 @@
     }
 
     #bc-2 {
-        margin-top: 200px;
+        margin-top: 220px;
     }
 
     #bc-3 {
-        margin-top: -180px;
+        margin-top: -200px;
     }
 
     #bc-4 {
         margin-top: -5px;
-    }
-
-    #bc-5 {
-        margin-top: -50px;
-    }
-   
+    }   
  }
 
 /* // X-Large devices (large desktops, 1200px and up) */

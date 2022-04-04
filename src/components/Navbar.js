@@ -17,9 +17,8 @@ const NavBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#latest-work">LO ÚLTIMO</Nav.Link>
-              <Nav.Link href="#writing-advice">CONSEJOS DE ESCRITURA</Nav.Link>
-              <Nav.Link href="#contact-me">CONTACTO</Nav.Link>
+              <Nav.Link className="my-nav-link" href="#latest-work">LO ÚLTIMO</Nav.Link>
+              <Nav.Link className="my-nav-link" href="#contact-me">CONTACTO</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
