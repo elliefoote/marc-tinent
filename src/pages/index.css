@@ -1,22 +1,83 @@
-#gatsby-focus-wrapper {
-    height: 100vh;
-    width: 100vw;
-    background-image: url(../images/Books.jpg);
-    background-size: cover;
-    background-position: relative;
+body {
+    font-family: "DM Sans";
 }
 
-#hero-overlay {
-    position: absolute;
-    background: rgba(202,90,200,0.5);
-    background: linear-gradient(90deg, rgba(202,90,200,0.5) 13%, rgba(31,41,92,0.5) 96%);
-    height: 100vh;
-    width: 100vw;
+.page-section {
+    min-height: 95vh;
+    width: 95vw;
+    margin: auto;
+    padding-top: 85px;
 }
 
-#hero-text-container {
-    width: 70vw;
+.section-head {
+    font-size: 18vw;
 }
+
+.contact-box {
+    background-color:  #044389;
+    border-radius: 15px;
+    width: 100%;
+    height: 70vh;
+}
+
+.contact-text {
+    font-size: 8vw;
+}
+
+.my-social-icon {
+    background-color: white;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+}
+
+.my-social-icon:hover {
+    transform: scale(1.1);
+}
+
+.headshot {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.bc-purchase:hover {
+    text-decoration: none;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+    
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .section-head {
+        font-size: 12vw;
+    }
+
+    .contact-box {
+        border-radius: 15px;
+        width: 100%;
+        height: 55vh;
+    }
+    
+    .contact-text {
+        font-size: 4vw;
+    }
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
 
 .my-social-icon {
     background-color: white;
@@ -32,5 +93,3 @@
 a {
     color: black;
 }
-
-body { font-family: "Source Sans Pro"; }

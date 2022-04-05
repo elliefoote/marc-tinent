@@ -1,9 +1,8 @@
 import React from "react";
 import Navbar from '../components/Navbar';
 import Cover from '../components/Cover';
-import Bookcard from '../components/Bookcard';
+import LatestWork from '../components/LatestWork';
 import Contact from '../components/Contact';
-import './newwebsite.css';
 import './index.css';
 
 const IndexPage = () => {
@@ -17,10 +16,7 @@ const IndexPage = () => {
 
             <Cover />
 
-            <div id="latest-work" className="page-section container d-flex flex-column">
-                <h2 className="section-head">LO ÚLTIMO</h2>
-                <Bookcard />
-            </div>
+            <LatestWork />
 
             <Contact />
 
