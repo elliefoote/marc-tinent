@@ -9,7 +9,9 @@ const IndexPage = () => {
     return (
   
         
-        <div id="new-web" className="bg-light">
+        <main id="new-web" className="bg-light">
+            <title>Marc Tinent | Escritor de Cosas</title>
+            
             <header>
                 <Navbar />
             </header>
@@ -20,7 +22,7 @@ const IndexPage = () => {
 
             <Contact />
 
-        </div>
+        </main>
   
     )
   }
