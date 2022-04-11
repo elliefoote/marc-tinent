@@ -16,6 +16,12 @@ module.exports = {
       "path": "./src/images/"
     },
     __key: "images"
+  },
+  {
+    resolve: 'gatsby-plugin-html-attributes',
+    options: {
+      lang: 'es'
+    }
   }
 ]
 };
