@@ -4,6 +4,9 @@ import MortViu from '../images/MortViu.png';
 import Pierrot from '../images/Pierrot.png';
 import Senora from '../images/Senora.png';
 import Viejos from '../images/Viejos.png';
+import DoceCabezones from '../images/DoceCabezones.png';
+import OchoNarices from '../images/OchoNarices.png';
+
 
 const Bookcard = () => {
     const bookData = [
@@ -81,7 +84,35 @@ const Bookcard = () => {
         
             ],
             textColor: "dark"
-        }
+        },
+        {
+            id: "bc-5",
+            category: "Relato",
+            title: "Ocho Narices",
+            description: `
+            En la historia de aventuras “El efecto de Cobalt Park”, un autor venido a menos descubre un misterioso parque que da poderes a los que se acercan a determinada hora. Parte de la antología “Ocho Narices”, de Editorial Garbuix.`,
+            img: OchoNarices,
+            links: [{
+                linkid: 8,
+                linktitle: "Léelo",
+                linkurl: "cobalt.pdf"
+            }],
+            textColor: "dark"
+        },
+        {
+            id: "bc-6",
+            category: "Relato",
+            title: "Doce Cabezones",
+            description: `
+            En la comedia histórica “Cronista Real”, el cronista del peor rey de Europa debe tomar una difícil decisión: ayudar a su rey a no parecer tan inútil o mantener el rigor histórico. Parte de la antología “Doce Cabezones”, de Editorial Garbuix.`,
+            img: DoceCabezones,
+            links: [{
+                linkid: 9,
+                linktitle: "Léelo",
+                linkurl: "cronista.pdf"
+            }],
+            textColor: "light"
+        },
 
     ]
 

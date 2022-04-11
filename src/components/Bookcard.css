@@ -11,19 +11,27 @@
 }
 
 #bc-1 {
-    background-color: #8A53FF;
+    background-color: #E86A58;
 }
 
 #bc-2 {
-    background-color: #FFD80C;
+    background-color: #FED45B;
 }
 
 #bc-3 {
-    background-color: #FD4B38;
+    background-color: #FCA15B;
 }
 
 #bc-4 {
-    background-color: #3CCB09;
+    background-color: #9BC7C5;
+}
+
+#bc-5 {
+    background-color: #1BB28C;
+}
+
+#bc-6 {
+    background-color: #23362B;
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -66,7 +74,11 @@
 
     #bc-4 {
         margin-top: -5px;
-    }   
+    }
+    
+    #bc-5 {
+        margin-top: -200px;
+    }
  }
 
 /* // X-Large devices (large desktops, 1200px and up) */
