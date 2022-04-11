@@ -6,6 +6,8 @@ import Senora from '../images/Senora.png';
 import Viejos from '../images/Viejos.png';
 import DoceCabezones from '../images/DoceCabezones.png';
 import OchoNarices from '../images/OchoNarices.png';
+import Cobalt from '../assets/cobalt.pdf';
+import Cronista from '../assets/cronista.pdf';
 
 
 const Bookcard = () => {
@@ -21,7 +23,7 @@ const Bookcard = () => {
                 linktitle: "En castellano",
                 linkurl: "https://www.panini.es/shp_esp_es/la-se-ora-de-chicago-sseno001-es01.html"
             }],
-            textColor: "light"
+            textColor: "dark"
         },
     
         {
@@ -57,7 +59,7 @@ const Bookcard = () => {
             }
         
             ],
-            textColor: "light"
+            textColor: "dark"
         },
 
         {
@@ -95,7 +97,7 @@ const Bookcard = () => {
             links: [{
                 linkid: 8,
                 linktitle: "Léelo",
-                linkurl: "cobalt.pdf"
+                linkurl: Cobalt
             }],
             textColor: "dark"
         },
@@ -109,7 +111,7 @@ const Bookcard = () => {
             links: [{
                 linkid: 9,
                 linktitle: "Léelo",
-                linkurl: "cronista.pdf"
+                linkurl: Cronista
             }],
             textColor: "light"
         },

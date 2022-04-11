@@ -7,7 +7,7 @@ const Contact = () => {
         <div id="contact-me" className="page-section container d-flex flex-column">
                 <h2 className="section-head">CONTACTO</h2>
                 <div className="contact-box text-dark mb-3 d-flex align-items-center justify-content-center flex-column">
-                    <div className="contact-text text-light">¿Quieres saber más?</div>
+                    <div className="contact-text text-dark">¿Quieres saber más?</div>
                     <div className="d-flex mt-3">
                     <div className="my-social-icon d-flex align-items-center justify-content-center me-3"><a href="http://www.instagram.com/marctinent"><BsInstagram className="fs-3 text-dark"/></a></div>
                     <div className="my-social-icon d-flex align-items-center justify-content-center me-3"><a href="mailto:marctinent@gmail.com"><AiTwotoneMail className="fs-2 text-dark" /></a></div>

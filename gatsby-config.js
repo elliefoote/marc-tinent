@@ -8,5 +8,14 @@ module.exports = {
     options: {
       "trackingId": "G-QL5JM5Q3YF"
     }
-  }]
+  },
+  `gatsby-plugin-preact`, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      "name": "images",
+      "path": "./src/images/"
+    },
+    __key: "images"
+  }
+]
 };
