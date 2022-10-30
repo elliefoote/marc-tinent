@@ -9,10 +9,6 @@
   font-size: 9vw;
 }
 
-.cover-body {
-  font-size: 5vw;
-}
-
 .cta {
   font-size: 5vw;
   color: #44E3D3;
@@ -46,10 +42,6 @@
     font-size: 7vw;
   }
 
-  .cover-body {
-    font-size: 4vw;
-  }
-
   .cta {
     font-size: 4vw;
   }
@@ -61,10 +53,6 @@
     font-size: 6vw;
   }
 
-  .cover-body {
-    font-size: 3vw;
-  }
-
   .cta {
     font-size: 3vw;
   }
@@ -74,10 +62,6 @@
 @media (min-width: 1200px) {
   .cover-head {
     font-size: 5vw;
-  }
-
-  .cover-body {
-    font-size: 2vw;
   }
 
   .cta {

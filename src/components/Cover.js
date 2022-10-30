@@ -15,12 +15,12 @@ const Cover = () => {
               <div>
                 <h1 className="cover-head text-light">Soy Marc Tinent.</h1>
               </div>
-              <div className="cover-body text-light">
+              <div className="cover-body text-light fs-4">
                 Escribo cosas. Como novelas, tebeos, series, programas de
                 entretenimiento para TV y copy de todo tipo. Y si me pongo,
                 hasta postales de Navidad.
               </div>
-              <div className="mt-2"><a href="#latest-work" className="cta">¿Te pica la curiosidad?</a></div>
+              <div className="mt-2"><a href="#latest-work" className="cta fs-4">¿Te pica la curiosidad?</a></div>
             </div>
           </div>
           <div className="col-lg-4 headshot-container mx-1 p-5">
