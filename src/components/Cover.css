@@ -3,7 +3,6 @@
   border-radius: 15px;
   width: 100%;
   min-height: 85vh;
-  padding-bottom: 20px;
 }
 
 .cover-head {
@@ -16,13 +15,25 @@
 
 .cta {
   font-size: 5vw;
-  color: #44e3d3;
+  color: #44E3D3;
+  text-decoration: none;
+}
+
+.cta:hover {
+  color: #f8f9fa;
 }
 
 .headshot {
+  border-radius: 8%;
   object-fit: contain;
-  width: 100%;
-  height: 100%;
+  width: 350px;
+}
+
+.headshot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -42,10 +53,6 @@
   .cta {
     font-size: 4vw;
   }
-
-  .headshot-container {
-    width: 75%;
-  }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -61,10 +68,6 @@
   .cta {
     font-size: 3vw;
   }
-
-  .headshot-container {
-    width: 30%;
-  }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
@@ -79,10 +82,6 @@
 
   .cta {
     font-size: 2vw;
-  }
-
-  .headshot-container {
-    width: 30%;
   }
 }
 
