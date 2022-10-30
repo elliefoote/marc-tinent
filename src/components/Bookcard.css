@@ -1,88 +1,88 @@
-
 .book-card {
-    border-radius: 15px;
-    width: 100%;
+  border-radius: 15px;
+  width: 100%;
+  background-color: #44e3d3;
 }
 
 .bc-image {
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
 }
 
-#bc-1 {
-    background-color: #E86A58;
-}
-
-#bc-2 {
-    background-color: #FED45B;
-}
-
-#bc-3 {
-    background-color: #FCA15B;
-}
-
-#bc-4 {
-    background-color: #9BC7C5;
-}
-
-#bc-5 {
-    background-color: #1BB28C;
-}
-
-#bc-6 {
-    background-color: #23362B;
+.bc-image-container {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
 }
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  }
+@media (min-width: 576px) {
+}
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  }
+@media (min-width: 768px) {
+}
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-    .book-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 20px;
-        row-gap: 20px;
-    }
+@media (min-width: 992px) {
+  .book-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
 
-    .bc-image {
-        width: 60%;
-        height: 60%;
-        object-fit: contain;
-    }
+  .bc-image {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+  }
 
-    .bc-text {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+  .bc-text {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
-    .bc-desc {
-        font-size: 1.2vw;
-    }
+  .bc-desc {
+    font-size: 1.2vw;
+  }
 
-    #bc-2 {
-        margin-top: 220px;
-    }
+  #bc-1 {
+    margin-top: 10px;
+  }
 
-    #bc-3 {
-        margin-top: -200px;
-    }
+  #bc-2 {
+    margin-top: 220px;
+  }
 
-    #bc-4 {
-        margin-top: -5px;
-    }
-    
-    #bc-5 {
-        margin-top: -200px;
-    }
- }
+  #bc-3 {
+    margin-top: -420px;
+  }
+
+  #bc-4 {
+    margin-top: -5px;
+  }
+
+  #bc-5 {
+    margin-top: -250px;
+  }
+
+  #bc-6 {
+    margin-top: -10px;
+  }
+
+  #bc-7 {
+    margin-top: -280px;
+  }
+}
 
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) {
+}
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {  }
+@media (min-width: 1400px) {
+}
