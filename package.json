@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@fontsource/dm-sans": "^4.5.3",
-    "@fontsource/montserrat": "^4.5.5",
+    "@fontsource/montserrat": "^4.5.13",
     "@fontsource/nunito": "^4.5.4",
     "@fontsource/source-sans-pro": "^4.5.3",
     "bootstrap": "^5.1.3",
