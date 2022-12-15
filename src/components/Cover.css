@@ -11,7 +11,7 @@
 
 .cta {
   font-size: 5vw;
-  color: #44E3D3;
+  color: #44e3d3;
   text-decoration: none;
 }
 
@@ -22,7 +22,7 @@
 .headshot {
   border-radius: 8%;
   object-fit: contain;
-  width: 350px;
+  width: 280px;
 }
 
 .headshot-container {
@@ -45,6 +45,12 @@
   .cta {
     font-size: 4vw;
   }
+
+  .headshot {
+    border-radius: 8%;
+    object-fit: contain;
+    width: 350px;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -55,6 +61,12 @@
 
   .cta {
     font-size: 3vw;
+  }
+
+  .headshot {
+    border-radius: 8%;
+    object-fit: contain;
+    width: 350px;
   }
 }
 
