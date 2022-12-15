@@ -1,4 +1,6 @@
-"use strict";
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 const fetch = require("node-fetch");
 const crypto = require("crypto");
@@ -48,7 +50,7 @@ const createInstagramNode = async (
   if (node.internal.type === "InstagramContent") {
     await createInstagramFileNode(node, getCache, createNode, createNodeId);
     if (node.album && node.album.length > 0) {
-      Promise.all(
+      await Promise.all(
         node.album.map(async (albumNode) =>
           createInstagramFileNode(albumNode, getCache, createNode, createNodeId)
         )
@@ -61,8 +63,8 @@ exports.sourceNodes = async ({ actions, createNodeId, getCache }) => {
   const { createNode } = actions;
   const configOptions = {
     pageLimit: 10,
-    access_token: "IGxxxx",
-    user_id: "1234",
+    access_token: process.env.INSTAGRAM_ACCESS_TOKEN,
+    user_id: process.env.INSTAGRAM_USER_ID,
   };
   const config = { ...defaultOptions, ...configOptions };
   const { limit } = config;
