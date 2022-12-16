@@ -28,11 +28,12 @@
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .book-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 20px;
+  .book-card {
+    display: inline-block;
+  }
+
+  #bc-2 {
+    margin-top: 220px;
   }
 
   .bc-image {
@@ -49,65 +50,10 @@
   .bc-desc {
     font-size: 1.2vw;
   }
-
-  #bc-1 {
-    margin-top: 10px;
-  }
-
-  #bc-2 {
-    margin-top: 220px;
-  }
-
-  #bc-3 {
-    margin-top: -360px;
-  }
-
-  #bc-4 {
-    margin-top: -5px;
-  }
-
-  #bc-5 {
-    margin-top: -250px;
-  }
-
-  #bc-6 {
-    margin-top: -10px;
-  }
-
-  #bc-7 {
-    margin-top: -280px;
-  }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  #bc-1 {
-    margin-top: 10px;
-  }
-
-  #bc-2 {
-    margin-top: 220px;
-  }
-
-  #bc-3 {
-    margin-top: -390px;
-  }
-
-  #bc-4 {
-    margin-top: -5px;
-  }
-
-  #bc-5 {
-    margin-top: -250px;
-  }
-
-  #bc-6 {
-    margin-top: -10px;
-  }
-
-  #bc-7 {
-    margin-top: -280px;
-  }
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
