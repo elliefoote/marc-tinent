@@ -1,5 +1,5 @@
 import * as React from "react";
-import MarcHeadshot from "../images/MarcHeadshot.jpg";
+import { StaticImage } from "gatsby-plugin-image";
 import "./Cover.css";
 
 const Cover = () => {
@@ -20,11 +20,19 @@ const Cover = () => {
                 entretenimiento para TV y copy de todo tipo. Y si me pongo,
                 hasta postales de Navidad.
               </div>
-              <div className="mt-2"><a href="#latest-work" className="cta fs-4">¿Te pica la curiosidad?</a></div>
+              <div className="mt-2">
+                <a href="#latest-work" className="cta fs-4">
+                  ¿Te pica la curiosidad?
+                </a>
+              </div>
             </div>
           </div>
-          <div className="col-lg-4 headshot-container mx-1 p-5">
-            <img className="headshot" src={MarcHeadshot} alt="Marc Tinent" />
+          <div className="col-lg-4 headshot-container mx-1 px-3 py-4">
+            <StaticImage
+              className="headshot"
+              src="../images/MarcHeadshot.jpg"
+              alt="Marc Tinent"
+            />
           </div>
         </div>
       </div>
