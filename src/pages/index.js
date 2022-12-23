@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
               className="text-light fs-2 my-link"
               href="mailto:marctinent@gmail.com"
             >
-              ¿Quieres decirme algo? ➚
+              ¿Quieres decirme algo?
             </a>
           </div>
         </Masonry>
@@ -45,7 +45,7 @@ export const query = graphql`
           id
           localImage {
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData(quality: 100)
             }
           }
         }
