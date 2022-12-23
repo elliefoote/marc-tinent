@@ -8,7 +8,7 @@ const InstaCard = ({ post }) => {
     <div className="card p-3">
       <div className="bc-text mb-2">
         <div className="bc-title">
-          <h3>Want more of my writing?</h3>
+          <h3>¿Quieres más?</h3>
         </div>
         <div className="bc-desc">
           También comparto un montón de consejos de escritura. Ya verás,{" "}
