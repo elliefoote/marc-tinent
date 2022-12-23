@@ -1,7 +1,6 @@
 import React from "react";
 import "./Bookcard.css";
 import BookImage from "./BookImage";
-import Link from "@mui/material/Link";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 const Bookcard = ({ book }) => {
@@ -25,17 +24,12 @@ const Bookcard = ({ book }) => {
 
           <div className="mt-3">
             {book.links.map((link) => (
-              <Link
-                key={link.linkid}
-                href={link.linkurl}
-                underline="none"
-                className="my-link me-3"
-              >
-                <span className="fs-6">{link.linktitle}</span>
-                <span className="fs-4">
+              <a key={link.linkid} href={link.linkurl} className="my-link me-3">
+                <span className="fs-6 link-text">{link.linktitle}</span>
+                <span className="link-arrow">
                   <KeyboardArrowRightIcon />
                 </span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

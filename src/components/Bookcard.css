@@ -29,6 +29,16 @@
   text-decoration: none;
 }
 
+.link-text {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.link-arrow {
+  vertical-align: middle;
+  display: inline-block;
+}
+
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
