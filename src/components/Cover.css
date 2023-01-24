@@ -12,6 +12,10 @@
   color: #f8f9fa;
 }
 
+.hf-box {
+  margin-bottom: 2em;
+}
+
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
