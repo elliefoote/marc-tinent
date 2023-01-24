@@ -11,11 +11,7 @@ export default function BookImage({ fileName, alt, landscape }) {
             relativePath
             name
             childImageSharp {
-              gatsbyImageData(
-                width: 600
-                placeholder: BLURRED
-                formats: [AUTO, WEBP]
-              )
+              gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
             }
           }
         }
