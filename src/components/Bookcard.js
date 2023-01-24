@@ -1,45 +1,40 @@
 import React from "react";
 import "./Bookcard.css";
-import { bookData } from "../assets/bookdata";
-import { Masonry } from "@mui/lab";
+import BookImage from "./BookImage";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
-const Bookcard = () => {
+const Bookcard = ({ book }) => {
   return (
-    <Masonry columns={{ sm: 1, md: 2 }} spacing={2}>
-      {bookData.map((book) => (
-        <div key={book.id}>
-          <div id={book.id} className="book-card p-3 mb-3 text-dark">
-            <div className="bc-image-container d-flex justify-content-center mb-3">
-              <img
-                src={book.img}
-                className="bc-image mb-3 mt-3"
-                alt={book.title}
-              />
-            </div>
+    <div key={book.id}>
+      <div id={book.id} className="card p-3 text-dark">
+        <div className="bc-image-container d-flex justify-content-center mb-3">
+          <BookImage
+            fileName={book.fileName}
+            alt={book.title}
+            landscape={book.landscape}
+          />
+        </div>
 
-            <div className="bc-text mb-2">
-              <div className="bc-category">{book.category}</div>
-              <div className="bc-title">
-                <h3>{book.title}</h3>
-              </div>
-              <div className="bc-desc">{book.description}</div>
+        <div className="bc-text mb-2">
+          <div className="bc-category">{book.category}</div>
+          <div className="bc-title">
+            <h3>{book.title}</h3>
+          </div>
+          <div className="bc-desc">{book.description}</div>
 
-              <div className="mt-3">
-                {book.links.map((link) => (
-                  <a
-                    key={link.linkid}
-                    href={link.linkurl}
-                    className="bc-purchase me-3 text-dark"
-                  >
-                    {link.linktitle}
-                  </a>
-                ))}
-              </div>
-            </div>
+          <div className="mt-3">
+            {book.links.map((link) => (
+              <a key={link.linkid} href={link.linkurl} className="my-link me-3">
+                <span className="fs-6 link-text">{link.linktitle}</span>
+                <span className="link-arrow">
+                  <KeyboardArrowRightIcon />
+                </span>
+              </a>
+            ))}
           </div>
         </div>
-      ))}
-    </Masonry>
+      </div>
+    </div>
   );
 };
 

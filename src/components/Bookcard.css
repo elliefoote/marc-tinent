@@ -1,7 +1,8 @@
-.book-card {
+.card {
   border-radius: 15px;
   width: 100%;
-  background-color: #44e3d3;
+  border: 2px solid #44e3d3;
+  margin-bottom: 2em;
 }
 
 .bc-image {
@@ -11,11 +12,31 @@
 }
 
 .bc-image-container {
-  background-color: #f8f9fa;
+  background-color: white;
   border-radius: 15px;
   margin-left: 15px;
   margin-right: 15px;
   margin-top: 15px;
+}
+
+.my-link {
+  color: #22726a;
+  text-decoration: none;
+}
+
+.my-link:hover {
+  color: #14443f;
+  text-decoration: none;
+}
+
+.link-text {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.link-arrow {
+  vertical-align: middle;
+  display: inline-block;
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -24,21 +45,26 @@
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .card {
+    margin-bottom: 0;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .book-card {
+  .card {
     display: inline-block;
-  }
-
-  #bc-2 {
-    margin-top: 220px;
   }
 
   .bc-image {
     width: 60%;
     height: 60%;
+    object-fit: contain;
+  }
+
+  .bc-image-landscape {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
   }
 

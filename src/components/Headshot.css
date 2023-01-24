@@ -1,18 +1,11 @@
-.cover-head {
-  font-size: 6vw;
+.headshot {
+  border-radius: 15px;
+  object-fit: contain;
+  width: 100%;
 }
 
-.cta {
-  font-size: 5vw;
-  color: #44e3d3;
-  text-decoration: none;
-}
-
-.cta:hover {
-  color: #f8f9fa;
-}
-
-.hf-box {
+.headshot-container {
+  overflow: hidden;
   margin-bottom: 2em;
 }
 
@@ -22,35 +15,17 @@
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .cover-head {
-    font-size: 7vw;
-  }
-
-  .cta {
-    font-size: 4vw;
+  .headshot-container {
+    overflow: hidden;
   }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .cover-head {
-    font-size: 4vw;
-  }
-
-  .cta {
-    font-size: 3vw;
-  }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .cover-head {
-    font-size: 4vw;
-  }
-
-  .cta {
-    font-size: 2vw;
-  }
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
