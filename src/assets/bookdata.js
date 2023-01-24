@@ -4,7 +4,7 @@ import Cronista from "./cronista.pdf";
 export const bookData = [
   {
     id: "bc-1",
-    category: "Programa de television",
+    category: "Programa de televisión",
     title: "La Gran Confusión",
     description: `Un imprevisible y divertido talk show semanal sobre grandes temas, abordados con humor y sentido del espectáculo. Presentado por Xavier Sardà en TVE.`,
     fileName: "Confusion.png",
