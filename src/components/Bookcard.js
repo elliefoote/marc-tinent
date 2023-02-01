@@ -1,5 +1,5 @@
 import React from "react";
-import "./Bookcard.css";
+import "./Card.css";
 import BookImage from "./BookImage";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
