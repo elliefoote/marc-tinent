@@ -7,9 +7,10 @@ const crypto = require("crypto");
 const querystring = require("querystring");
 const { createRemoteFileNode } = require("gatsby-source-filesystem");
 
-const defaultOptions = {
-  limit: 10,
-  pageLimit: 30,
+const config = {
+  pageSize: 1,
+  access_token: process.env.INSTAGRAM_ACCESS_TOKEN,
+  user_id: process.env.INSTAGRAM_USER_ID,
 };
 
 const createInstagramFileNode = async (
@@ -61,15 +62,8 @@ const createInstagramNode = async (
 
 exports.sourceNodes = async ({ actions, createNodeId, getCache }) => {
   const { createNode } = actions;
-  const configOptions = {
-    pageLimit: 10,
-    access_token: process.env.INSTAGRAM_ACCESS_TOKEN,
-    user_id: process.env.INSTAGRAM_USER_ID,
-  };
-  const config = { ...defaultOptions, ...configOptions };
-  const { limit } = config;
   const apiOptions = querystring.stringify({
-    limit: config.pageLimit,
+    limit: config.pageSize,
     access_token: config.access_token,
   });
   const apiUrl = `https://graph.instagram.com/${config.user_id}/media?fields=id,media_url,media_type,permalink,timestamp,caption,username,thumbnail_url,children{id,media_url,media_type,thumbnail_url,timestamp}&${apiOptions}`;
@@ -83,28 +77,17 @@ exports.sourceNodes = async ({ actions, createNodeId, getCache }) => {
   };
 
   // Recursively get data from Instagram api
-  const getData = async (url, data = []) => {
+  const getData = async (url) => {
     let response = await fetchAndParse(url);
     if (response.error !== undefined) {
       console.error("\nINSTAGRAM API ERROR: ", response.error.message);
-      return data;
     }
-    data = data.concat(response.data);
-    let next_url = response?.paging?.next;
-
-    if (data.length < limit && next_url) {
-      return getData(next_url, data);
-    }
-
-    return data;
+    return response.data;
   };
 
   // Create nodes
   const createNodes = async (API) => {
     let data = await getData(API).then((res) => res);
-    if (data.length > limit) {
-      data = data.slice(0, limit);
-    }
     for (const item of data) {
       if (
         item.id !== undefined &&
