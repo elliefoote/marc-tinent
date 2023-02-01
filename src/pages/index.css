@@ -31,13 +31,10 @@ body {
   gap: 5px;
 }
 
-a {
-  color: black;
-}
-
 .hf-box {
   background-color: #09635a;
   border-radius: 15px;
+  margin-bottom: 1.5em;
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -49,6 +46,10 @@ a {
   .page-section {
     width: 65vw;
     margin: auto;
+  }
+
+  .hf-box {
+    margin-bottom: 0;
   }
 }
 

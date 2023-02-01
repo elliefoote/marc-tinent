@@ -1,6 +1,5 @@
 import React from "react";
-import "./InstaCard.css";
-import "./Bookcard.css";
+import "./Card.css";
 import InstagramPost from "../components/InstagramPost";
 
 const InstaCard = ({ post }) => {
