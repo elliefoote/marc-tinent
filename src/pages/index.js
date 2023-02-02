@@ -21,13 +21,15 @@ const IndexPage = ({ data }) => {
             <Bookcard book={book} key={"bookcard_" + book.id} />
           ))}
           <InstaCard post={data.allInstagramContent.nodes[0]} />
-          <div className="hf-box p-3">
-            <a
-              className="text-light fs-2 my-link"
-              href="mailto:marctinent@gmail.com"
-            >
-              ¿Quieres decirme algo?
-            </a>
+          <div className="hf-box">
+            <div className="p-4">
+              <a
+                className="text-light fs-2 my-link"
+                href="mailto:marctinent@gmail.com"
+              >
+                ¿Quieres decirme algo?
+              </a>
+            </div>
           </div>
         </Masonry>
       </div>

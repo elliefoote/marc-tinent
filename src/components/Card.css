@@ -68,11 +68,6 @@
     object-fit: contain;
   }
 
-  .bc-text {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .bc-desc {
     font-size: 1.2vw;
   }
