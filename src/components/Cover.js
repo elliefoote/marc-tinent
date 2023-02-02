@@ -1,5 +1,4 @@
 import * as React from "react";
-import "./Cover.css";
 import SocialIcons from "./SocialIcons";
 
 const Cover = () => {

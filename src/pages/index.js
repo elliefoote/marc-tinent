@@ -5,7 +5,7 @@ import Bookcard from "../components/Bookcard";
 import { bookData } from "../assets/bookdata";
 import { graphql } from "gatsby";
 import "./index.css";
-import "../components/Bookcard.css";
+import "../components/Card.css";
 import { Masonry } from "@mui/lab";
 import InstaCard from "../components/InstaCard";
 
