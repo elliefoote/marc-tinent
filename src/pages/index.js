@@ -14,13 +14,7 @@ const IndexPage = ({ data }) => {
     <main id="new-web" className="bg-light">
       <title>Marc Tinent | Escritor de Cosas</title>
       <div className="page-section pt-3">
-        <Masonry
-          columns={{ sm: 1, md: 2 }}
-          spacing={{ sm: 1, md: 2 }}
-          defaultColumns={2}
-          defaultSpacing={2}
-          defaultHeight={6000}
-        >
+        <Masonry columns={{ sm: 1, md: 2 }} spacing={{ sm: 1, md: 2 }}>
           <Cover />
           <Headshot />
           {bookData.map((book) => (
