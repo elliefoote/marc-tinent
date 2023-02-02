@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => {
           spacing={{ sm: 1, md: 2 }}
           defaultColumns={2}
           defaultSpacing={2}
-          defaultHeight={2000}
+          defaultHeight={3000}
         >
           <Cover />
           <Headshot />
