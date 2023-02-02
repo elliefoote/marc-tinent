@@ -17,7 +17,6 @@ const IndexPage = ({ data }) => {
         <Masonry
           columns={{ sm: 1, md: 2 }}
           spacing={{ sm: 1, md: 2 }}
-          defaultHeight={450}
           defaultColumns={2}
           defaultSpacing={2}
         >
