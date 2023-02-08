@@ -6,7 +6,7 @@ import { bookData } from "../assets/bookdata";
 import { graphql } from "gatsby";
 import "./index.css";
 import "../components/Card.css";
-import { Masonry } from "@mui/lab";
+import Masonry from "@mui/lab/Masonry";
 import InstaCard from "../components/InstaCard";
 
 const IndexPage = ({ data }) => {

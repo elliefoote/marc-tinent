@@ -21,6 +21,7 @@ module.exports = {
       },
     },
     "gatsby-transformer-sharp",
+    "gatsby-plugin-preact",
     {
       resolve: "gatsby-source-filesystem",
       options: {
