@@ -6,15 +6,20 @@ import { bookData } from "../assets/bookdata";
 import { graphql } from "gatsby";
 import "./index.css";
 import "../components/Card.css";
-import Masonry from "@mui/lab/Masonry";
+//import Masonry from "@mui/lab/Masonry";
 import InstaCard from "../components/InstaCard";
+import Masonry from "react-masonry-css";
 
 const IndexPage = ({ data }) => {
   return (
     <main id="new-web" className="bg-light">
       <title>Marc Tinent | Escritor de Cosas</title>
       <div className="page-section pt-3">
-        <Masonry columns={{ sm: 1, md: 2 }} spacing={{ sm: 1, md: 2 }}>
+        <Masonry
+          breakpointCols={{ default: 2, 576: 1 }}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column"
+        >
           <Cover />
           <Headshot />
           {bookData.map((book) => (

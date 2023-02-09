@@ -37,6 +37,23 @@ body {
   margin-bottom: 1.5em;
 }
 
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -15px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 15px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  margin-bottom: 15px;
+}
+
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
