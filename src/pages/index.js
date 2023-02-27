@@ -6,32 +6,63 @@ import { bookData } from "../assets/bookdata";
 import { graphql } from "gatsby";
 import "./index.css";
 import "../components/Card.css";
-import Masonry from "@mui/lab/Masonry";
 import InstaCard from "../components/InstaCard";
+import Masonry from "react-masonry-css";
+import { Media } from "gatsby-plugin-fresnel";
 
 const IndexPage = ({ data }) => {
   return (
     <main id="new-web" className="bg-light">
       <title>Marc Tinent | Escritor de Cosas</title>
       <div className="page-section pt-3">
-        <Masonry columns={{ sm: 1, md: 2 }} spacing={{ sm: 1, md: 2 }}>
-          <Cover />
-          <Headshot />
-          {bookData.map((book) => (
-            <Bookcard book={book} key={"bookcard_" + book.id} />
-          ))}
-          <InstaCard post={data.allInstagramContent.nodes[0]} />
-          <div className="hf-box">
-            <div className="p-4">
-              <a
-                className="text-light fs-2 my-link"
-                href="mailto:marctinent@gmail.com"
-              >
-                ¿Quieres decirme algo?
-              </a>
+        <Media at="sm">
+          <Masonry
+            breakpointCols={{ default: 1 }}
+            className="my-masonry-grid"
+            columnClassName="my-masonry-grid_column"
+          >
+            <Cover />
+            <Headshot />
+            {bookData.map((book) => (
+              <Bookcard book={book} key={"bookcard_" + book.id} />
+            ))}
+            <InstaCard post={data.allInstagramContent.nodes[0]} />
+            <div className="hf-box">
+              <div className="p-4">
+                <a
+                  className="text-light fs-2 my-link"
+                  href="mailto:marctinent@gmail.com"
+                >
+                  ¿Quieres decirme algo?
+                </a>
+              </div>
             </div>
-          </div>
-        </Masonry>
+          </Masonry>
+        </Media>
+        <Media greaterThanOrEqual="md">
+          <Masonry
+            breakpointCols={{ default: 2 }}
+            className="my-masonry-grid"
+            columnClassName="my-masonry-grid_column"
+          >
+            <Cover />
+            <Headshot />
+            {bookData.map((book) => (
+              <Bookcard book={book} key={"bookcard_" + book.id} />
+            ))}
+            <InstaCard post={data.allInstagramContent.nodes[0]} />
+            <div className="hf-box">
+              <div className="p-4">
+                <a
+                  className="text-light fs-2 my-link"
+                  href="mailto:marctinent@gmail.com"
+                >
+                  ¿Quieres decirme algo?
+                </a>
+              </div>
+            </div>
+          </Masonry>
+        </Media>
       </div>
     </main>
   );
