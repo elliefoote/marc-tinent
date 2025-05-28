@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
             {bookData.map((book) => (
               <Bookcard book={book} key={"bookcard_" + book.id} />
             ))}
-            <InstaCard post={data.allInstagramContent.nodes[0]} />
+            {/* <InstaCard post={data.allInstagramContent.nodes[0]} /> */}
             <div className="hf-box">
               <div className="p-4">
                 <a
