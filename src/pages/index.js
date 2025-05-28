@@ -50,7 +50,7 @@ const IndexPage = ({ data }) => {
             {bookData.map((book) => (
               <Bookcard book={book} key={"bookcard_" + book.id} />
             ))}
-            <InstaCard post={data.allInstagramContent.nodes[0]} />
+            {/* <InstaCard post={data.allInstagramContent.nodes[0]} /> */}
             <div className="hf-box">
               <div className="p-4">
                 <a
@@ -68,23 +68,23 @@ const IndexPage = ({ data }) => {
   );
 };
 
-export const query = graphql`
-  query HomePageQuery {
-    allInstagramContent {
-      nodes {
-        id
-        caption
-        album {
-          id
-          localImage {
-            childImageSharp {
-              gatsbyImageData(quality: 100)
-            }
-          }
-        }
-      }
-    }
-  }
-`;
+// export const query = graphql`
+//   query HomePageQuery {
+//     allInstagramContent {
+//       nodes {
+//         id
+//         caption
+//         album {
+//           id
+//           localImage {
+//             childImageSharp {
+//               gatsbyImageData(quality: 100)
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;
 
 export default IndexPage;
