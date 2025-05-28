@@ -87,7 +87,8 @@ exports.sourceNodes = async ({ actions, createNodeId, getCache }) => {
 
   // Create nodes
   const createNodes = async (API) => {
-    let data = await getData(API).then((res) => res);
+    // let data = await getData(API).then((res) => res);
+    let data = [];
     for (const item of data) {
       if (
         item.id !== undefined &&
