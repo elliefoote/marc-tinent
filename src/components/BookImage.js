@@ -22,6 +22,12 @@ export default function BookImage({ fileName, alt, landscape }) {
   const file = data.images.edges.find((edge) => {
     return edge.node.relativePath.includes(fileName);
   });
+
+  if (!file) {
+    console.warn(`Image with fileName "${fileName}" not found.`);
+    return null;
+  }
+
   const image = getImage(file.node);
   if (!image) {
     return null;

@@ -7,7 +7,7 @@ export const bookData = [
     category: "Programa de televisión",
     title: "Soc i seré",
     description: `100 concursantes quieren ser la persona más catalana de Catalunya, superando retos de cultura popular, lengua, geografía, gastronomía, música y muchas más sorpresas.`,
-    fileName: "SociSere.png",
+    fileName: "SocISere.png",
     links: [],
     landscape: true,
   },
@@ -31,7 +31,7 @@ export const bookData = [
     category: "Novela",
     title: "Los siete de Barbarroja 2: El festival del rey pirata",
     description: `Mientras buscan a su padre, los Barbarroja llegan a una isla donde se celebra el mejor festival del mundo de la piratería. Eso sí, también tiene una maldición que les complicará mucho la vida.`,
-    fileName: "Barbarroja2.png",
+    fileName: "7Barbarroja_2.png",
     links: [
       {
         linkid: 2,
@@ -56,7 +56,7 @@ export const bookData = [
     category: "Novela",
     title: "Los siete de Barbarroja 1: En busca de papá",
     description: `¡El gran pirata Barbarroja ha desaparecido! Sus siete hijos se tendrán que hacer cargo del “negocio familiar” mientras surcan los mares buscando a su padre. ¡Estén preparados o no!`,
-    fileName: "Barbarroja1.png",
+    fileName: "7Barbarroja_1.png",
     links: [
       {
         linkid: 5,
@@ -81,7 +81,7 @@ export const bookData = [
     category: "Programa de televisión",
     title: "Cuina com puguis",
     description: `Primera temporada de un concurso de humor y cocina para TV3/3Cat donde varios famosos que no necesariamente saben cocinar se enfrentan en duelos culinarios muy locos.`,
-    fileName: "Cuina.png",
+    fileName: "CuinaComPuguis.png",
     links: [
       {
         linkid: 8,
@@ -96,7 +96,7 @@ export const bookData = [
     category: "Programa de televisión",
     title: "La mejor generación",
     description: `Un game show musical para Telecinco en el que 9 cantantes famosos y 3 humoristas se enfrentan para demostrar que su generación es la mejor de todas.`,
-    fileName: "Generacion.png",
+    fileName: "LaMejorGeneracion.png",
     links: [
       {
         linkid: 9,
@@ -111,7 +111,7 @@ export const bookData = [
     category: "Programa de televisión",
     title: "Caigut del cel",
     description: `La segunda temporada de una docu-serie para TV3 / 3Cat en la que investigamos árboles genealógicos para entregar herencias perdidas a familiares lejanos... o no tan lejanos.`,
-    fileName: "Caigut.png",
+    fileName: "CaigutDelCel.png",
     links: [
       {
         linkid: 10,
