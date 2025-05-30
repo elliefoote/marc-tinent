@@ -3,10 +3,8 @@ import Cover from "../components/Cover";
 import Headshot from "../components/Headshot";
 import Bookcard from "../components/Bookcard";
 import { bookData } from "../assets/bookdata";
-import { graphql } from "gatsby";
 import "./index.css";
 import "../components/Card.css";
-import InstaCard from "../components/InstaCard";
 import Masonry from "react-masonry-css";
 import { Media } from "gatsby-plugin-fresnel";
 
