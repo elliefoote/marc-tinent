@@ -27,7 +27,7 @@ const Bookcard = ({ book }) => {
               <a key={link.linkid} href={link.linkurl} className="my-link me-3">
                 <span className="fs-6 link-text">{link.linktitle}</span>
                 <span className="link-arrow">
-                  <KeyboardArrowRightIcon />
+                  {/* <KeyboardArrowRightIcon /> */}
                 </span>
               </a>
             ))}
