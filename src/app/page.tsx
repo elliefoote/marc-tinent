@@ -25,6 +25,7 @@ export default function Home() {
             {bookData.map((book) => (
               <Bookcard book={book} key={"bookcard_" + book.id} />
             ))}
+            <InstaCard />
             <div className="hf-box">
               <div className="p-4">
                 <a

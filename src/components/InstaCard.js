@@ -4,7 +4,7 @@ import InstagramPost from "../components/InstagramPost";
 
 const InstaCard = () => {
   return (
-    <div className="card p-3">
+    <div className="marc-card p-3">
       <div className="bc-text mb-2">
         <div className="bc-title">
           <h3>Y también...</h3>
