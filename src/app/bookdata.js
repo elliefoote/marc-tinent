@@ -1,13 +1,10 @@
-import Cobalt from "./cobalt.pdf";
-import Cronista from "./cronista.pdf";
-
 export const bookData = [
   {
     id: "bc-1",
     category: "Programa de televisión",
     title: "Soc i seré",
     description: `100 concursantes quieren ser la persona más catalana de Catalunya, superando retos de cultura popular, lengua, geografía, gastronomía, música y muchas más sorpresas.`,
-    fileName: "SocISere.png",
+    fileName: "/SocISere.png",
     links: [],
     landscape: true,
   },
@@ -16,7 +13,7 @@ export const bookData = [
     category: "Programa de televisión",
     title: "Joc de cartes",
     description: `Temporadas 8 y 9 del reality de éxito de TV3/3Cat en el que varios restaurantes compiten para demostrar que son el mejor en su categoría.`,
-    fileName: "JocDeCartes.png",
+    fileName: "/JocDeCartes.png",
     links: [
       {
         linkid: 1,
@@ -31,7 +28,7 @@ export const bookData = [
     category: "Novela",
     title: "Los siete de Barbarroja 2: El festival del rey pirata",
     description: `Mientras buscan a su padre, los Barbarroja llegan a una isla donde se celebra el mejor festival del mundo de la piratería. Eso sí, también tiene una maldición que les complicará mucho la vida.`,
-    fileName: "7Barbarroja_2.png",
+    fileName: "/7Barbarroja_2.png",
     links: [
       {
         linkid: 2,
@@ -56,7 +53,7 @@ export const bookData = [
     category: "Novela",
     title: "Los siete de Barbarroja 1: En busca de papá",
     description: `¡El gran pirata Barbarroja ha desaparecido! Sus siete hijos se tendrán que hacer cargo del “negocio familiar” mientras surcan los mares buscando a su padre. ¡Estén preparados o no!`,
-    fileName: "7Barbarroja_1.png",
+    fileName: "/7Barbarroja_1.png",
     links: [
       {
         linkid: 5,
@@ -81,7 +78,7 @@ export const bookData = [
     category: "Programa de televisión",
     title: "Cuina com puguis",
     description: `Primera temporada de un concurso de humor y cocina para TV3/3Cat donde varios famosos que no necesariamente saben cocinar se enfrentan en duelos culinarios muy locos.`,
-    fileName: "CuinaComPuguis.png",
+    fileName: "/CuinaComPuguis.png",
     links: [
       {
         linkid: 8,
@@ -96,7 +93,7 @@ export const bookData = [
     category: "Programa de televisión",
     title: "La mejor generación",
     description: `Un game show musical para Telecinco en el que 9 cantantes famosos y 3 humoristas se enfrentan para demostrar que su generación es la mejor de todas.`,
-    fileName: "LaMejorGeneracion.png",
+    fileName: "/LaMejorGeneracion.png",
     links: [
       {
         linkid: 9,
@@ -111,7 +108,7 @@ export const bookData = [
     category: "Programa de televisión",
     title: "Caigut del cel",
     description: `La segunda temporada de una docu-serie para TV3 / 3Cat en la que investigamos árboles genealógicos para entregar herencias perdidas a familiares lejanos... o no tan lejanos.`,
-    fileName: "CaigutDelCel.png",
+    fileName: "/CaigutDelCel.png",
     links: [
       {
         linkid: 10,
@@ -126,7 +123,7 @@ export const bookData = [
     category: "Programa de televisión",
     title: "La Gran Confusión",
     description: `Un imprevisible y divertido talk show semanal sobre grandes temas, abordados con humor y sentido del espectáculo. Presentado por Xavier Sardà en TVE.`,
-    fileName: "Confusion.png",
+    fileName: "/Confusion.png",
     links: [
       {
         linkid: 11,
@@ -141,7 +138,7 @@ export const bookData = [
     category: "Cómic",
     title: "La señora de Chicago",
     description: `La historia real y jamás contada de Alice Clement, la primera inspectora de policía de Chicago, conocida como "La Sherlock Holmes femenina", y que sin quererlo acabó entregando la ciudad al mismísimo Al Capone. Con dibujo de Pablo M. Collar.`,
-    fileName: "Senora.png",
+    fileName: "/Senora.png",
     links: [
       {
         linkid: 12,
@@ -156,7 +153,7 @@ export const bookData = [
     category: "Novela",
     title: "El Pierrot Negro de Whitechapel",
     description: `15 años después de su desaparición, Jack el Destripador vuelve a Londres. Un doctor que ha perdido a la mujer que ama se obcecará en descubrir finalmente su identidad.`,
-    fileName: "Pierrot.png",
+    fileName: "/Pierrot.png",
     links: [
       {
         linkid: 13,
@@ -171,7 +168,7 @@ export const bookData = [
     category: "Serie",
     title: "El mort viu",
     description: `Comedia negra ganadora de un Premio Ondas sobre Llàtzer, un ni-ni que es asesinado por su padre y su hermano y que resucita de entre los muertos como si nada hubiese ocurrido.`,
-    fileName: "MortViu.png",
+    fileName: "/MortViu.png",
     links: [
       {
         linkid: 14,
@@ -191,7 +188,7 @@ export const bookData = [
     category: "Cómic",
     title: "Viejos descubridores",
     description: `Un viejo Cristóbal Colón se une a su amigo Alonso de Ojeda y su enemigo Américo Vespucci para intentar dar con la Fuente de la Eterna Juventud. Con dibujo de Lourdes Navarro.`,
-    fileName: "Viejos.png",
+    fileName: "/Viejos.png",
     links: [
       {
         linkid: 16,
@@ -216,12 +213,12 @@ export const bookData = [
     category: "Relato",
     title: "Ocho Narices",
     description: `En la historia de aventuras “El efecto de Cobalt Park”, un autor venido a menos descubre un misterioso parque que da poderes a los que se acercan a determinada hora. Parte de la antología “Ocho Narices”, de Editorial Garbuix.`,
-    fileName: "OchoNarices.png",
+    fileName: "/OchoNarices.png",
     links: [
       {
         linkid: 19,
         linktitle: "Léelo",
-        linkurl: Cobalt,
+        linkurl: 'Cobalt.pdf',
       },
     ],
     landscape: false,
@@ -231,12 +228,12 @@ export const bookData = [
     category: "Relato",
     title: "Doce Cabezones",
     description: `En la comedia histórica “Cronista Real”, el cronista del peor rey de Europa debe tomar una difícil decisión: ayudar a su rey a no parecer tan inútil o mantener el rigor histórico. Parte de la antología “Doce Cabezones”, de Editorial Garbuix.`,
-    fileName: "DoceCabezones.png",
+    fileName: "/DoceCabezones.png",
     links: [
       {
         linkid: 20,
         linktitle: "Léelo",
-        linkurl: Cronista,
+        linkurl: 'Cronista.pdf',
       },
     ],
     landscape: false,

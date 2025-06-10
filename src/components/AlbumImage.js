@@ -1,22 +1,15 @@
 import React from "react";
-import { getImage, GatsbyImage } from "gatsby-plugin-image";
+import Image from 'next/image'
 
-const AlbumImage = ({ albumItem }) => {
-  const image = getImage(albumItem.localImage.childImageSharp.gatsbyImageData);
-  if (!image) {
-    console.warn("Couldn't extract the image");
-  }
-
+export default function AlbumImage({ albumItem }) {
   return (
-    <div>
-      <GatsbyImage
-        image={image}
+    <div style={{ width: 100, height: 500 }}>
+      <Image
+        src={albumItem.src}
         alt={albumItem.id}
-        className="rounded"
-        loading="eager"
+        fill={true}
       />
     </div>
   );
 };
 
-export default AlbumImage;

@@ -2,7 +2,21 @@ import React from "react";
 import AlbumImage from "./AlbumImage";
 import Carousel from "react-bootstrap/Carousel";
 
-const InstagramPost = ({ post }) => {
+const post = {
+  id: "1",
+  album: [
+    {
+      id: "album1",
+      src: "/instagram1.jpg",
+    },
+    {
+      id: "album2",
+      src: "/instagram2.jpg",
+    },
+  ],
+}
+
+const InstagramPost = () => {
   return (
     <div key={post.id}>
       <Carousel interval={null}>

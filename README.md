@@ -1,25 +1,36 @@
-# Marc Tinent's portfolio website
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Table of contents
+## Getting Started
 
-1. [Overview and goals](#overview-and-goals)
-2. [What I learned](#what-i-learned)
-3. [Future features](#future-features)
-4. [Acknowledgements](#acknowledgements)
+First, run the development server:
 
-## Overview and goals
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-This is a portfolio website that I developed for a freelance client who is a professional writer.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-The purpose of the site is to provide information for both editors and readers of Marc's work. He also wanted to maintain a consistent visual identity with his Instagram profile.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Stack
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-- **Framework** - GatsbyJS
-- **Data layer** - GraphQL, integrated with Instagram Graph API
-- **Styling** - Bootstrap 5, custom CSS, react-masonry for layout
-- **Hosting/Deployment** - Netlify, together with Zapier integration that re-deploys project whenever a new post is uploaded to Instagram
+## Learn More
 
-## Future features
+To learn more about Next.js, take a look at the following resources:
 
-- Integrate site with a headless CMS, so Marc can update / add content himself
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

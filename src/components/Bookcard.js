@@ -3,10 +3,10 @@ import "./Card.css";
 import BookImage from "./BookImage";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
-const Bookcard = ({ book }) => {
+export default function Bookcard({ book }) {
   return (
     <div key={book.id}>
-      <div id={book.id} className="card p-4 text-dark">
+      <div id={book.id} className="marc-card p-4 text-dark">
         <div className="bc-image-container d-flex justify-content-center mb-3">
           <BookImage
             fileName={book.fileName}
@@ -37,5 +37,3 @@ const Bookcard = ({ book }) => {
     </div>
   );
 };
-
-export default Bookcard;
