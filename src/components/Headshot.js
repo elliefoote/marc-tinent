@@ -1,13 +1,15 @@
 import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import Image from "next/image";
 import "./Headshot.css";
+import MarcHeadshot from "./MarcHeadshot.jpg"
 
 const Headshot = () => {
   return (
     <div className="headshot-container">
-      <StaticImage
+      <Image
         className="headshot"
-        src="../images/MarcHeadshot.jpg"
+        src={MarcHeadshot}
+        width={475}
         alt="Marc Tinent"
       />
     </div>

@@ -1,36 +1,21 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import Image from 'next/image'
 
 export default function BookImage({ fileName, alt, landscape }) {
-  const data = useStaticQuery(graphql`
-    query {
-      images: allFile {
-        edges {
-          node {
-            relativePath
-            name
-            childImageSharp {
-              gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
-            }
-          }
-        }
-      }
-    }
-  `);
+  const bcImageStyle = {
+    objectFit: 'contain',
+  };
 
-  const file = data.images.edges.find((edge) => {
-    return edge.node.relativePath.includes(fileName);
-  });
-  const image = getImage(file.node);
-  if (!image) {
-    return null;
-  }
+  const bcImageLandscapeStyle = {
+    objectFit: 'contain',
+  };
+
   return (
-    <GatsbyImage
-      image={image}
+    <Image
+      src={fileName}
       alt={alt}
-      className={landscape ? "bc-image-landscape" : "bc-image mb-3 mt-3"}
+      style={landscape ? bcImageLandscapeStyle : bcImageStyle}
+      fill={true}
     />
   );
 }

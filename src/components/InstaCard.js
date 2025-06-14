@@ -2,9 +2,9 @@ import React from "react";
 import "./Card.css";
 import InstagramPost from "../components/InstagramPost";
 
-const InstaCard = ({ post }) => {
+const InstaCard = () => {
   return (
-    <div className="card p-3">
+    <div className="marc-card p-3">
       <div className="bc-text mb-2">
         <div className="bc-title">
           <h3>Y también...</h3>
@@ -19,7 +19,7 @@ const InstaCard = ({ post }) => {
         </div>
       </div>
       <div className="p-3">
-        <InstagramPost post={post} />
+        <InstagramPost />
       </div>
     </div>
   );
