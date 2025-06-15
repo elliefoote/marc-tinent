@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function AlbumImage({ albumItem }) {
   return (
-    <div style={{ width: 100, height: 500 }}>
+    <div style={{ width: '100%', aspectRatio: '4/5' }}>
       <Image
         src={albumItem.src}
         alt={albumItem.id}
