@@ -4,7 +4,7 @@ export const bookData = [
     category: "Programa de televisión",
     title: "Soc i seré",
     description: `100 concursantes quieren ser la persona más catalana de Catalunya, superando retos de cultura popular, lengua, geografía, gastronomía, música y muchas más sorpresas.`,
-    fileName: "/SocISere.png",
+    fileName: "/SocISere2.png",
     links: [],
     landscape: true,
   },
