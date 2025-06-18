@@ -5,7 +5,13 @@ export const bookData = [
     title: "Soc i seré",
     description: `100 concursantes quieren ser la persona más catalana de Catalunya, superando retos de cultura popular, lengua, geografía, gastronomía, música y muchas más sorpresas.`,
     fileName: "/SocISere2.png",
-    links: [],
+    links: [
+      {
+        linkid: 1,
+        linktitle: "En 3Cat",
+        linkurl: "https://www.3cat.cat/3cat/soc-i-sere/",
+      },
+    ],
     landscape: true,
   },
   {
