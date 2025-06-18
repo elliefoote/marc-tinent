@@ -1,7 +1,4 @@
 export const handler = async () => {
-    // You need to put your instagram user id here
-    const userId = process.env.INSTAGRAM_USER_ID;
-    // You need to put your instagram access token here
     const accessToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 
     // Get latest post
@@ -12,7 +9,6 @@ export const handler = async () => {
         }
     });
     const data = await response.json();
-    console.log(data)
 
     if (!data.data || data.data.length === 0) {
         return {
@@ -20,26 +16,23 @@ export const handler = async () => {
             body: 'No posts found',
         };
     }
-    const posts = data.data;
+    const latestPost = data.data[0];
 
     // Fetch images from the post
     const mediaUrls = [];
-    if (posts.length > 0) {
-        const firstPost = posts[0];
-        const childrenUrl = `https://graph.instagram.com/${firstPost.id}/children?fields=id,media_type,media_url`;
-        const childrenResponse = await fetch(childrenUrl, {
-            headers: {
-                Authorization: `Bearer ${accessToken}`,
-            },
-        });
-        const childrenData = await childrenResponse.json();
-        console.log(childrenData);
+    const childrenUrl = `https://graph.instagram.com/${latestPost.id}/children?fields=id,media_type,media_url`;
+    const childrenResponse = await fetch(childrenUrl, {
+        headers: {
+            Authorization: `Bearer ${accessToken}`,
+        },
+    });
+    const childrenData = await childrenResponse.json();
+    console.log(childrenData);
 
-        if (childrenData.data && childrenData.data.length > 0) {
-            for (const child of childrenData.data) {
-                if (child.media_url) {
-                    mediaUrls.push(child.media_url);
-                }
+    if (childrenData.data && childrenData.data.length > 0) {
+        for (const child of childrenData.data) {
+            if (child.media_url) {
+                mediaUrls.push(child.media_url);
             }
         }
     }
