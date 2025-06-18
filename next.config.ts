@@ -1,7 +1,16 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+const config: NextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'scontent*.cdninstagram.com', // Use wildcard (*) for subdomains
+        port: '',
+        pathname: '**', // Allow all paths
+      },
+    ],
+  },
+}
 
-export default nextConfig;
+export default config
