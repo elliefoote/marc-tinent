@@ -1,6 +1,13 @@
 export const handler = async () => {
     const accessToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 
+    if (!accessToken) {
+        return {
+            statusCode: 500,
+            body: 'Instagram access token is not set',
+        };
+    }
+
     // Get latest post
     const url = `https://graph.instagram.com/v21.0/me/media`;
     const response = await fetch(url, {
