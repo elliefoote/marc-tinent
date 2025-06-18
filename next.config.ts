@@ -2,7 +2,14 @@ import type { NextConfig } from 'next'
 
 const config: NextConfig = {
   images: {
-    domains: ['scontent.cdninstagram.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'scontent*.cdninstagram.com', // Use wildcard (*) for subdomains
+        port: '',
+        pathname: '**', // Allow all paths
+      },
+    ],
   },
 }
 
